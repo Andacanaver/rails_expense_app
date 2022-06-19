@@ -18,7 +18,7 @@
 2. run command 'bundle install'
 3. In the \config\application.rb file add in the following:
   * Dotenv::Railtie.load
-  # HOSTNAME = ENV['HOSTNAME']
+  * HOSTNAME = ENV['HOSTNAME']
   - This will enable environment variables in development environment.
 4. run the following commands:
   a. rails importmap:install

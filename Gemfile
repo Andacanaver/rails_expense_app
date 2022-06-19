@@ -34,7 +34,7 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.8'
 gem 'rubocop', '~> 1.30', require: false
 
 # Use Redis adapter to run Action Cable in production
-# gem "redis", "~> 4.0"
+gem "redis", "~> 4.0"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
