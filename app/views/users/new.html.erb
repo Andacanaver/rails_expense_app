@@ -1,0 +1,28 @@
+<%= form_with model: @user, url: sign_up_path do |form| %>
+  <%= render partial: "shared/form_errors", locals: { object: form.object } %>
+  <div>
+    <%= form.label :full_name %>
+    <%= form.full_name_field :full_name %>
+  </div>
+  <div>
+    <%= form.label :last_name %>
+    <%= form.last_name_field :last_name %>
+  </div>
+  <div>
+    <%= form.label :username %>
+    <%= form.username_field :username, required: true %>
+  </div>
+  <div>
+    <%= form.label :email %>
+    <%= form.email_field :email, required: true %>
+  </div>
+  <div>
+    <%= form.label :password %>
+    <%= form.password_field :password, required: true %>
+  </div>
+  <div>
+    <%= form.label :password_confirmation %>
+    <%= form.password_confirmation_field :password_confirmation, required: true %>
+  </div>
+  <%= form.submit "Sign Up" %>
+<% end %>
