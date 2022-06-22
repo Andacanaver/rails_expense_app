@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "first_ones#show"
+  root "users#index"
   post "sign_up", to: "users#create"
   get "sign_up", to: "users#new"
   resources :confirmations, only: [:create, :edit, :new], param: :confirmation_token
